@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>net6.0-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Qian.BarcodeScanner</RootNamespace>
+    <AssemblyName>Qian.BarcodeScanner</AssemblyName>
+    <Platforms>AnyCPU;x86</Platforms>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName).WPF</PackageId>
+    <PackageIcon></PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>$(AssemblyName).WPF</Title>
+    <Authors>Qian</Authors>
+    <Company>Qian</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RawInput.Sharp" Version="0.1.3" />
+  </ItemGroup>
+
+</Project>
